@@ -1,0 +1,22 @@
+{
+  "name": "coworker",
+  "version": "1.0.0",
+  "description": "Coworking is a work style where different individuals or teams share a working environment. If you are a self-employed or a working-from-home professional, you would love to have the option to rent a meeting room, or a desk in an office equipped with high-speed internet, printers, copiers, stationaries, and office kitchen. As there is an increase in the number of coworkers and the number of sharable workspaces, we are looking to develop an application to connect both parties. The objective is very similar to how Uber connects riders with drivers and Airbnb connects tenants with landlords. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"nodemon index.js"
+  },
+  "author": "Aditi Sharma",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "underscore": "^1.9.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}

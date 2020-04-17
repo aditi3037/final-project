@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User</title>
+    <link rel="stylesheet" type="text/css"  href="style.css">
+</head>
+<body>
+	<section id="container">
+	<form action="/auth" method="POST">
+        <div id="user_register_control">
+            <div class="input_control">
+                <label for="email">Email Address</label>
+                <input type="email" name="email" id="email" placeholder="Your mail address">
+            </div>
+            <div class="input_control">
+                <label for="pass">Password</label>
+                <input type="password" name="pass" id="pass" placeholder="Minimum 8 characters" minlength="8">
+            </div>
+            <div class="input_control">
+                <label for="type">Customer Type</label>
+                <select name="usertype" id="usertype">
+                    <option value="user">User</option>
+                    <option value="owner">Owner</option>
+                </select>
+            </div>
+            <input type="submit" class="btn submit" name="Login"/>
+        </div>
+	</form>
+    </section>
+    <footer>
+        <p>&copy;2020 Coworking</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owner</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <menu>
+                <li><a href="/owner">Add Property/Workspace</a></li>
+                <li><a href="/props">List </a></li>
+		<li><a href="/remove">Remove Property/Workspace</a></li>
+                <button class="btn" onclick="logOut();">Logout</button>
+            </menu>
+        </nav>
+    </header>
+    <section id="container">
+        <div id="select_option">
+            <span class="selected">Add</span>
+        </div>
+	<form action="/add-prop" method="POST">        
+	<div id="owner_property_control" class="owner_control">  
+		<div class="input_control">
+                <label for="pname">Property Name</label>
+                <input type="text" name="pname" id="pname" placeholder="Property name"/>
+            </div>
+            <div class="input_control">
+                <label for="street">Street</label>
+                <input type="text" name="street" id="street" placeholder="Street name or number">
+            </div>
+            <div class="input_control">
+                <label for="city">City Name</label>
+                <input type="text" name="city" id="city" placeholder="City name">
+            </div>
+	<div class="input_control">
+                <label for="wname">Workspace</label>
+                <input type="text" name="workspace" id="wname" placeholder="Workspace name">
+            </div>
+            <div class="input_control">
+                <label for="price">Cost</label>
+                <input type="text" name="price" id="price" />
+            </div>
+            <input type="submit"  class="btn submit" name="Add "/>
+		</div>
+        </form>
+    </section>
+    <footer>
+        <p>&copy;2020 Coworking</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owner</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <menu>
+                <li><a href="/owner">Add Property/Workspace</a></li>
+                <li><a href="/props">List </a></li>
+		<li><a href="/remove">Remove Property/Workspace</a></li>
+                <button class="btn" onclick="logOut();">Logout</button>
+            </menu>
+        </nav>
+    </header>
+    <section id="container" class="user_section">
+       <form action="/remove" method="POST">	
+	 <div class="input_control">
+            <input type="text" name="pname" id="pname" placeholder="Property Name"  style="width: 100%">
+         </div>
+	<div class="input_control">
+	     <button type="submit" name="Search"  class="btn button"> Remove Property</button>      
+	</div>	
+	</form>
+    </section>
+    <footer>
+        <p>&copy;2020 Coworking</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>

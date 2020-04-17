@@ -1,0 +1,18 @@
+{
+  "user": [
+    {
+      "name": "Erick Winks",
+      "email": "erick@eck.uk",
+      "telephone": "+2744005842614",
+      "usertype": "owner",
+      "pass": "12345678"
+    },
+    {
+      "name": "Moris Borison",
+      "email": "erick@eck.uk",
+      "telephone": "+2744005842614",
+      "usertype": "user",
+      "pass": "12345678"
+    }
+  ]
+}
